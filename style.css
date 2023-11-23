@@ -8,6 +8,7 @@
 
 .footer {
     margin-top: 225px;
+    position: static;
 }
 
 .welcome {
