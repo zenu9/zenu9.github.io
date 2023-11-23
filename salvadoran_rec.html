@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baratie Recipe</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body class="menubody">
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Baratie</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="chefs.html">Chefs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="promogame.html">Promo</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item d-flex flex-column-reverse">
+                        <a class="nav-link" href="login.html">Log in</a>
+                    </li>
+                    <li class="nav-item d-flex flex-column-reverse">
+                        <a class="nav-link" href="signup.html">Sign up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <img src="images/salvadoran.png" class="rounded mx-auto d-block mt-3" alt="Salvadoran-Style Pescado Frito" style="width: 500px; height: 350px;">
+        <div class="card mt-3 mb-3" style="width: 800px; margin: auto;">
+            <div class="card-body">
+                <h5 class="card-title">Recipe of Salvadoran-Style Pescado Frito.</h5>
+            </div>
+            <ol class="list-group list-group-numbered list-group-flush">
+                <li class="list-group-item">2 tablespoons coarse sea salt</li>
+                <li class="list-group-item">4 (10- to 12-ounce) whole trout, cleaned and skin scored</li>
+                <li class="list-group-item">¼ cup yellow mustard</li>
+                <li class="list-group-item">2 tablespoons Worcestershire sauce</li>
+                <li class="list-group-item">1 tablespoon garlic powder</li>
+                <li class="list-group-item">½ medium-size red onion, thinly sliced (about 1 cup)</li>
+                <li class="list-group-item">1 cup vegetable oil</li>
+                <li class="list-group-item">Lime wedges, rice, and salad, for serving</li>
+            </ol>
+            <div class="card-body">
+                <h5 class="card-title mb-3">Directions</h5>
+                <div class="accordion accordion-flush" id="accordionOpen">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            Step 1
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            Rub 1 1/2 teaspoons salt evenly over outside and inside of each fish. Stir together mustard, Worcestershire sauce, and garlic powder in a small bowl. Spread evenly over outside and inside of each fish, covering completely.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            Step 2
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Stuff cavities of fish evenly with onion slices. Heat oil in a large, deep skillet over medium-high to 350°F. Carefully place 2 fish in hot oil, and cook until skin is browned and crispy, about 4 minutes. Flip fish, and cook just until flesh is white throughout, 2 to 3 minutes. Transfer to a wire rack. Repeat with remaining 2 fish.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            Step 3
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Serve fish with lime wedges, rice, and salad.
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

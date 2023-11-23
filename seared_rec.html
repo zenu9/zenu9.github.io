@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baratie Recipe</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body class="menubody">
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Baratie</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="chefs.html">Chefs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="promogame.html">Promo</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item d-flex flex-column-reverse">
+                        <a class="nav-link" href="login.html">Log in</a>
+                    </li>
+                    <li class="nav-item d-flex flex-column-reverse">
+                        <a class="nav-link" href="signup.html">Sign up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <img src="images/searedtuna.png" class="rounded mx-auto d-block mt-3" alt="Seared Tuna with Soy and Red Chiles" style="width: 500px; height: 350px;">
+        <div class="card mt-3 mb-3" style="width: 800px; margin: auto;">
+            <div class="card-body">
+                <h5 class="card-title">Recipe of Seared Tuna with Soy and Red Chiles.</h5>
+            </div>
+            <ol class="list-group list-group-numbered list-group-flush">
+                <li class="list-group-item">3 tablespoons soy sauce</li>
+                <li class="list-group-item">1 teaspoon sugar</li>
+                <li class="list-group-item">1/8 teaspoon dried red pepper flakes</li>
+                <li class="list-group-item">1/2 cup canned low-sodium chicken broth or homemade stock</li>
+                <li class="list-group-item">4 tuna steaks, about 1-inch thick (about 2 pounds in all)</li>
+                <li class="list-group-item">1/2 teaspoon kosher salt</li>
+                <li class="list-group-item">1/2 teaspoon freshly ground black pepper</li>
+                <li class="list-group-item">2 tablespoons cooking oil</li>
+                <li class="list-group-item">1 teaspoon sesame oil</li>
+                <li class="list-group-item">1 scallion including green top, chopped</li>
+                <li class="list-group-item">3 garlic cloves, minced</li>
+            </ol>
+            <div class="card-body">
+                <h5 class="card-title mb-3">Directions</h5>
+                <div class="accordion accordion-flush" id="accordionOpen">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            Step 1
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            In a small bowl, combine soy sauce, sugar, red pepper flakes, and broth. Sprinkle fish with salt and black pepper. Heat cooking oil in a large frying pan over moderately high heat. Add tuna and cook until brown, about 3 minutes. Turn and cook fish until done to your taste, 3 to 4 minutes longer for medium rare. Transfer tuna to a cutting board to rest while you make the sauce.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            Step 2
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Reduce heat to moderately low and add sesame oil to pan. Stir in scallions and garlic and cook, stirring, until fragrant; about 1 minute. Add soy sauce mixture to pan and simmer until reduced to approximately 1/3 cup, about 2 minutes. Cut tuna into slices and serve with sauce.
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

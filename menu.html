@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baratie Menu</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body class="menubody">
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Baratie</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="chefs.html">Chefs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="promogame.html">Promo</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item d-flex flex-column-reverse">
+                        <a class="nav-link" href="login.html">Log in</a>
+                    </li>
+                    <li class="nav-item d-flex flex-column-reverse">
+                        <a class="nav-link" href="signup.html">Sign up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Shopping Cart</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul id="cart-items"></ul>
+            </div>
+        </div>
+        <button class="btn btn-success mt-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Cart</button>
+        <a class="btn btn-success mt-3" href="orderIndiv.html">Order individually</a>
+
+        <div id="carouselFade" class="carousel slide carousel-fade carouselWidth">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/crispycrab.png" class="d-block w-100" alt="Crispy Crab Cakes with Tomato Butter">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Best Selling Dishes</h5>
+                    <p>Crispy Crab Cakes with Tomato Butter</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/monkfish.png" class="d-block w-100" alt="Monkfish Piccata">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Best Selling Dishes</h5>
+                    <p>Monkfish Piccata</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/kwames.png" class="d-block w-100" alt="Kwame's Escovitch Snapper">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Best Selling Dishes</h5>
+                    <p>Kwame's Escovitch Snapper</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-1">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/monkfish.png" class="card-img-top" alt="Monkfish Piccata">
+                    <div class="card-body">
+                    <h5 class="card-title">Monkfish Piccata</h5>
+                    <p class="card-text">Monkfish, with its tender, springy bite reminiscent of lobster, is firm and sweet enough to stand up to this lemony butter sauce enriched with white miso. Plenty of briny capers and caperberries help balance the richness.</p>
+                    <a href="monkfish_rec.html" class="btn btn-primary">Recipe</a>
+                    <a href="monkfish_rec.html" class="btn btn-primary">Order</a>
+                    <button class="btn btn-primary" onclick="addToCart('Monkfish Piccata')">Add to Cart</button>    
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/venetianshrimp.png" class="card-img-top" alt="Venetian Shrimp">
+                    <div class="card-body">
+                    <h5 class="card-title">Venetian Shrimp with Polenta</h5>
+                    <p class="card-text">David McCann developed this recipe to replicate Schie con Polenta in Venice. Make a batch of polenta, and while the polenta simmers away, cook some garlic and white wine and stock, add butter, and, literally two minutes (at most) before you want to serve, toss in the shrimp. </p>
+                    <a href="venetian_rec.html" class="btn btn-primary">Recipe</a>
+                    <a href="venetian_rec.html" class="btn btn-primary">Order</a>
+                    <button class="btn btn-primary" onclick="addToCart('Venetian Shrimp with Polenta')">Add to Cart</button>    
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/searedtuna.png" class="card-img-top" alt="Seared Tuna with Soy and Red Chiles">
+                    <div class="card-body">
+                    <h5 class="card-title">Seared Tuna with Soy and Red Chiles</h5>
+                    <p class="card-text">Soy sauce, sesame oil, scallion, garlic, and dried chiles are combined with chicken stock to make an intense and delicious sauce for the seared tuna.</p>
+                    <a href="seared_rec.html" class="btn btn-primary">Recipe</a>
+                    <a href="seared_rec.html" class="btn btn-primary">Order</a>
+                    <button class="btn btn-primary" onclick="addToCart('Seared Tuna with Soy and Red Chiles')">Add to Cart</button>   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-1">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/roastedbranzino.png" class="card-img-top" alt="Roasted Branzino with Caper Butter">
+                    <div class="card-body">
+                    <h5 class="card-title">Roasted Branzino with Caper Butter</h5>
+                    <p class="card-text">Whole branzino roasted with lemon and rosemary is a foolproof way to ensure flavorful, perfectly cooked fish. Steve Corry takes the dish over the top with a caper compound butter.</p>
+                    <a href="branzino_rec.html" class="btn btn-primary">Recipe</a>
+                    <a href="branzino_rec.html" class="btn btn-primary">Order</a>
+                    <button class="btn btn-primary" onclick="addToCart('Roasted Branzino with Caper Butter')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/crispycrab.png" class="card-img-top" alt="Crispy Crab Cakes with Tomato Butter">
+                    <div class="card-body">
+                    <h5 class="card-title">Crispy Crab Cakes with Tomato Butter</h5>
+                    <p class="card-text">The late chef Patrick Clark's crab cakes at Tavern on the Green were legendary, taking on a pop of flavor from chopped fresh jalapeño and a crispy exterior from panko.</p>
+                    <a href="crispycrab_rec.html" class="btn btn-primary">Recipe</a>
+                    <a href="crispycrab_rec.html" class="btn btn-primary">Order</a>
+                    <button class="btn btn-primary" onclick="addToCart('Crispy Crab Cakes with Tomato Butter')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/butteryshrimp.png" class="card-img-top" alt="Buttery Shrimp with Peas and Potatoes">
+                    <div class="card-body">
+                    <h5 class="card-title">Buttery Shrimp with Peas and Potatoes</h5>
+                    <p class="card-text">Unlike their larger, late-season siblings, baby veggies are supremely quick to cook. Creamy new potatoes add substance to this quick one-pan skillet dinner of tender shrimp, fresh shelling peas, and dill, which come together in a sweet and buttery broth laced with cream.</p>
+                    <a href="butteryshrimp_rec.html" class="btn btn-primary">Recipe</a>
+                    <a href="butteryshrimp_rec.html" class="btn btn-primary">Order</a>
+                    <button class="btn btn-primary" onclick="addToCart('Buttery Shrimp with Peas and Potatoes')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-1 mb-2">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/thaicocktail.png" class="card-img-top" alt="Thai-Style Shrimp Cocktail">
+                    <div class="card-body">
+                    <h5 class="card-title">Thai-Style Shrimp Cocktail</h5>
+                    <p class="card-text">Chef Kris Yenbamroong of Night + Market invites a quick garlic aioli and super spicy fish sauce–based dipping sauce to the shrimp cocktail party. Using a fork to crush the garlic for the aioli leaves it sweeter and less pungent while still breaking down the fibrous cloves for a creamy dipping sauce. Serve the shrimp alongside ramekins of aioli and nam jim seafood sauce for dipping, or arrange the shrimp around the rim of a coupe glass filled with nam jim for more intense flavor.</p>
+                    <a href="thaitail_rec.html" class="btn btn-primary">Recipe</a>
+                    <a href="thaitail_rec.html" class="btn btn-primary">Order</a>
+                    <button class="btn btn-primary" onclick="addToCart('Thai-Style Shrimp Cocktail')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/salvadoran.png" class="card-img-top" alt="Salvadoran-Style Pescado Frito">
+                    <div class="card-body">
+                    <h5 class="card-title">Salvadoran-Style Pescado Frito</h5>
+                    <p class="card-text">Inspired by her mother's cooking, food writer and recipe developer Karla Vasquez's recipe celebrates this popular style of cooking fish in El Salvador. Many families use mojarra, a fish found in agua dulce (fresh water), but trout makes a great substitute. Salsa inglesa, or Worcestershire sauce, is a frequent find in Salvadoran condiment drawers and teams up with the mustard to create a punchy, umami-packed crust. Delicate, meltingly tender whole trout gets crispy skin from a quick sear in a cast-iron skillet.</p>
+                    <a href="salvadoran_rec.html" class="btn btn-primary">Recipe</a>
+                    <a href="salvadoran_rec.html" class="btn btn-primary">Order</a>
+                    <button class="btn btn-primary" onclick="addToCart('Salvadoran-Style Pescado Frito')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/kwames.png" class="card-img-top" alt="Kwame's Escovitch Snapper">
+                    <div class="card-body">
+                    <h5 class="card-title">Kwame's Escovitch Snapper</h5>
+                    <p class="card-text">Inspired by his travels in Jamaica, chef Kwame Onwuachi shared this recipe for escovitch snapper. In Jamaica, escovitch fish — fish that's fried and then topped with pickled, thinly sliced vegetables — is everywhere. In chef Kwame Onwuachi's version, a garlicky marinade forms a crust as the fish cooks, adding flavor and keeping the snapper moist and tender, and a pickled tangle of thinly sliced chiles, carrot, and onion­ makes a punchy, crunchy topping for crispy fried whole snapper.</p>
+                    <a href="kwames_rec.html" class="btn btn-primary">Recipe</a>
+                    <a href="kwames_rec.html" class="btn btn-primary">Order</a>
+                    <button class="btn btn-primary" onclick="addToCart('Kwame\'s Escovitch Snapper')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="scrollToTopButton" class="btn btn-primary btn-floating">Scroll to Top</button>
+    </div>
+
+    <script src="jquery-3.7.1.js"></script>
+    <script src="scroll.js"></script>
+    <script src="addCart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

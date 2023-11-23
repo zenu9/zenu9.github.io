@@ -1,0 +1,50 @@
+.chat-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+.chat-popup {
+    background-color: aliceblue;
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    left: 20px;
+    border: 3px solid black;
+    width: 300px;
+}
+
+.chat-header {
+    background-color: darkgreen;
+    color: white;
+}
+
+.chat-header h2 {
+    padding: 10px;
+}
+
+.close-btn {
+    cursor: pointer;
+    display: flex;
+    float: right;
+    padding: 10px;
+}
+
+.chat-content {
+    padding: 15px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.chat-input {
+    display: flex;
+    padding: 15px;
+    background-color: white;
+}
+
+.chat-input input {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}

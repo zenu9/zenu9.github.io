@@ -1,0 +1,95 @@
+.indexbody {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/background.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.footer {
+    margin-top: 225px;
+}
+
+.welcome {
+    margin-top: 180px;
+}
+
+.color_db {
+    color: rgb(85, 85, 233);
+}
+
+.menubody {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/menu.jpg);
+    background-size: cover;
+}
+
+.carousel-inner > .carousel-item > img {
+    width: 500px;
+    height: 500px;
+}
+
+.carouselWidth {
+    max-width: 800px;
+}
+
+#carouselFade {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#timer {
+    text-align: center;
+    font-size: 100px;
+    font-style: italic;
+    font-weight: bold;
+    color: green;
+}
+
+.tabcontent img {
+    max-width: 270px;
+    max-height: 407px;
+    border: 2px solid aliceblue;
+}
+
+.tabcontent h3 {
+    color: yellowgreen;
+    font-size: larger;
+}
+
+.tabcontent p {
+    color: whitesmoke;
+    font-size: large;
+    font-style: italic;
+}
+
+.aboutbody {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/about.jpg);
+    background-size: cover;
+}
+
+.about {
+    margin-top: 180px;
+}
+
+.about h1 {
+    color: rgb(85, 85, 233);
+}
+
+.loginbody {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/login.jpg);
+    background-size: cover;
+}
+
+#scrollToTopButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+video {
+    border: 5px solid darkslateblue;
+    width: 60vw;
+    height: 70vh;
+    object-fit: cover;
+}
